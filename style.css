@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Desktop */
+@media only screen and (orientation: landscape) {
+  .container {
+    width: 1440;
+    background-image: url("images/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+  }
+}
+/* Mobile */
+@media only screen and (orientation: portrait) {
+  .container {
+    width: 378px;
+    flex-direction: column;
+    background-image: url("images/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+  }
+  .left {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: hsl(0, 100%, 74%);
+}
+
+.left h1 {
+  color: white;
+  font-weight: bold;
+  /* width: 400px; */
+}
+.left p {
+  margin-top: 20px;
+  color: white;
+  width: 400px;
+  font-size: small;
+  font-weight: 300;
+}
+/* .right {
+  
+} */
+
+/* .left {
+
+} */
+
+.top {
+  border-radius: 7px;
+  padding: 10px 20px;
+  background-color: hsl(248, 32%, 49%);
+  color: hsl(246, 25%, 77%);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.buttom {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.buttom div input {
+  width: 500px;
+  margin: 10px;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.buttom div input[type="submit"] {
+  background-color: hsl(154, 59%, 51%);
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+}
+
+.buttom p {
+  text-align: center;
+  font-size: small;
+  color: hsl(246, 25%, 77%);
+}
+
+span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 800;
+}

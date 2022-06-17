@@ -4,33 +4,34 @@
   box-sizing: border-box;
 }
 /* Desktop */
-@media only screen and (orientation: landscape) {
+ @media screen and (max-width: 1440px) {
   .container {
-    width: 1440;
+    min-width: 100%;
     background-image: url("images/bg-intro-desktop.png");
     background-repeat: no-repeat;
   }
 }
 /* Mobile */
-@media only screen and (orientation: portrait) {
+@media screen and (max-width: 500px) {
   .container {
-    width: 378px;
+    min-width:100%;
     flex-direction: column;
     background-image: url("images/bg-intro-mobile.png");
     background-repeat: no-repeat;
   }
   .left {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
   }
-}
+} 
+
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  padding: 50px;
+  height: 100vh;
+  width: 100vh;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -40,7 +41,7 @@
 .left h1 {
   color: white;
   font-weight: bold;
-  /* width: 400px; */
+  width: 400px;
 }
 .left p {
   margin-top: 20px;
@@ -49,13 +50,6 @@
   font-size: small;
   font-weight: 300;
 }
-/* .right {
-  
-} */
-
-/* .left {
-
-} */
 
 .top {
   border-radius: 7px;
@@ -65,24 +59,29 @@
   margin-bottom: 10px;
   text-align: center;
 }
+strong {
+  color: white;
+}
 
 .buttom {
+  min-width: 100%;
   background-color: white;
   padding: 15px;
   border-radius: 10px;
+  background: white;
 }
 
 .buttom div input {
-  width: 500px;
+  min-width: 100%;
   margin: 10px;
-  border: 1px solid white;
+  border: 2px solid rgb(241, 236, 236);
   padding: 15px;
   border-radius: 5px;
 }
 
 .buttom div input[type="submit"] {
   background-color: hsl(154, 59%, 51%);
-  color: hsl(249, 10%, 26%);
+  color: white;
   font-weight: 600;
 }
 
